@@ -2,12 +2,12 @@
 
 ## Must-Haves
 
-> these are necessary for basic usability
+> There must be a movie detail page or pop up specific to these movies.
 
 ## Should-Haves
 
-> these will complete the user experience, but are not necessary
+> IMDb scores of movies could be added to the upper right corner
 
 ## Could-Haves
 
-> would be really cool ... if there's time
+> It would be nice if links to the trailers of the movies were added.
