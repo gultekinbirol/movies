@@ -1,17 +1,18 @@
 # Image gallery
 
-> A simple
+> A simple movie poster project.
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Image gallery](#image-gallery)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Status](#status)
+  - [Contact](#contact)
 
 ## General info
 
@@ -20,7 +21,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/ss.png)
 
 ## Technologies
 
@@ -31,31 +32,28 @@
 
 ## Setup
 
-clone the repo and start using the stop watch.
+Clone the repo and run `npm install`
 
 ## Code Examples
 
 ```js
-
+const filterImagesHandler = (value) => {
+	const images = document.querySelectorAll('.image-box');
+	images.forEach((img) => {
+		const title = img.querySelector('h6').innerText;
+		if (title.toLowerCase().includes(value.toLowerCase())) {
+			img.classList.remove('hidden');
+		} else {
+			img.classList.add('hidden');
+		}
+	});
+};
 ```
-
-## Features
-
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
 
 ## Status
 
-Project is: _in progress_
-
-## Inspiration
+Project is: _done_
 
 ## Contact
+
+[Gultekin Birol](https://github.com/gultekinbirol)
